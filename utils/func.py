@@ -49,7 +49,7 @@ def deleteSessionState():
     
 # reset one session_state variable
 def resetVar(variableName):
-    sst[variableName] = [variable[1] for variable in variableList if variable[0] == variableName][0]
+    sst[variableName] = [copy.deepcopy(variable[1]) for variable in variableList if variable[0] == variableName][0]
 
 # show session_state
 def showSessionState():
