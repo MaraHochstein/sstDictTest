@@ -42,11 +42,9 @@ def deleteSessionState():
         del sst[key]
     st.info('deleted')
     showSessionState()
-    st.write(variableList)
     initSessionState()
     st.info('initialized')
     showSessionState()
-    st.write(variableList)
     st.divider()
     
 # reset one session_state variable
