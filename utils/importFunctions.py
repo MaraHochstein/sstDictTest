@@ -42,12 +42,12 @@ def importData(selectedDataset):
     
     # dict 1 example
     if hasdict1data[selectedDataset]:
-        sst.dictVar1 = {}
+        #sst.dictVar1 = {}
         sst.dictVar1[0] = dict1data1[selectedDataset]
         sst.dictVar1[1] = dict1data2[selectedDataset]
     
     # dict 2 example
-    sst.dictVar2 = {}
+    #sst.dictVar2 = {}
     for img in dict2data[selectedDataset].keys():
         strings = dict2data[selectedDataset][img].split(' ')
         sst.dictVar2[img] = {'string1': strings[0],

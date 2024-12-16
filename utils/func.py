@@ -1,7 +1,7 @@
 #######################
 # imports
 #######################
-from utils.imports import (st, sst, pd)
+from utils.imports import (st, sst, pd, copy)
 
 #######################
 # variables
@@ -30,7 +30,7 @@ def initSessionState():
 # save var in session_state
 def saveVar(variableName, variable):
     if variableName not in sst:
-        sst[variableName] = variable
+        sst[variableName] = copy.deepcopy(variable)
     
 # reset session_state
 def deleteSessionState():
