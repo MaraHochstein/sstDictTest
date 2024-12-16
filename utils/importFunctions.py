@@ -42,7 +42,7 @@ def importData(selectedDataset):
     
     # dict 1 example
     if hasdict1data[selectedDataset]:
-    sst.dictVar1 = {}
+        sst.dictVar1 = {}
         sst.dictVar1[0] = dict1data1[selectedDataset]
         sst.dictVar1[1] = dict1data2[selectedDataset]
     
