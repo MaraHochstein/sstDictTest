@@ -23,7 +23,7 @@ dict2data = [{123:'img name one1', 321:'img name two1', 231:'img name three1'}, 
 # import
 ########################
 def importData(selectedDataset):
-    st.write(variableList)
+    st.write(fn.variableList)
     sstVars = ['strVar','boolVar', 'dfVar', 'listVar', 'dictVar1', 'dictVar2']
     
     for var in sstVars:
@@ -54,4 +54,4 @@ def importData(selectedDataset):
                             'string3': strings[2]
                             }
                             
-    st.write(variableList)
+    st.write(fn.variableList)
